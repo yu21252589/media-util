@@ -1,15 +1,15 @@
-
 const path = require('path');
+// 全量引入，打包成单一文件
 module.exports = {
-  mode:'production',
+  mode: 'production',
   entry: {
     home: './dictionaries/index.js',
+    util: './util/index.js',
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     library: {
-      // name: 'MyLibrary',
       type: 'umd',
     },
   },

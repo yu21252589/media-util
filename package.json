@@ -1,61 +1,31 @@
 {
-  "_from": "media-util",
-  "_id": "media-util@1.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-JMEPu8qqHB3Hs0Tw8CRDx8/OC9TvadPFfgfhiWF8QTgrfJrE0kSbouBhrgSvSCo7v6u8Nj6TA+ivdtP7lw9e8Q==",
-  "_location": "/media-util",
-  "_phantomChildren": {
-    "@types/html-minifier-terser": "5.1.2",
-    "@types/tapable": "1.0.8",
-    "@types/webpack": "4.41.32",
-    "big.js": "5.2.2",
-    "define-properties": "1.1.4",
-    "emojis-list": "3.0.0",
-    "html-minifier-terser": "5.1.1",
-    "lodash": "4.17.21",
-    "minimist": "1.2.6",
-    "object.getownpropertydescriptors": "2.1.3",
-    "pretty-error": "2.1.2",
-    "tapable": "1.1.3"
-  },
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "media-util",
-    "name": "media-util",
-    "escapedName": "media-util",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/media-util/-/media-util-1.0.0.tgz",
-  "_shasum": "ba8cdec36dd7f247a2652c7ea84bbde56851c1ec",
-  "_spec": "media-util",
-  "_where": "E:\\work\\video-search-v2",
-  "author": "",
-  "bundleDependencies": false,
+  "author": "yuyu",
   "dependencies": {
     "chalk": "^5.0.1",
-    "html-webpack-plugin": "^4.5.1"
+    "html-webpack-plugin": "^4.5.1",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3"
   },
-  "deprecated": false,
   "description": "",
   "devDependencies": {
+    "@vue/compiler-sfc": "^3.2.37",
     "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^6.7.1",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "style-loader": "^3.3.1",
+    "vue-loader": "^17.0.0",
+    "vue-style-loader": "^4.1.3",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^3.11.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
   },
   "license": "ISC",
-  "main": "dist/bundle.js",
   "name": "media-util",
   "scripts": {
-    "build": "webpack --config  ./config/build.config.js",
-    "create": "node ./bin/create.js",
+    "serve": "webpack server --config ./config/serve.config.js ",
+    "dist": "webpack --config  ./config/build.config.js",
+    "add": "node ./bin/create.js",
     "demo": "node ./bin/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

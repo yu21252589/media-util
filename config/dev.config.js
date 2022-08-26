@@ -1,7 +1,7 @@
-
 const path = require('path');
+
 module.exports = {
-  mode:'production',
+  mode: 'production',
   entry: {
     home: './dictionaries/index.js',
   },

@@ -67,5 +67,5 @@ const updataIndex = (name) => {
 
 // 快捷方式-前往文件
 const toEditFile = (name) => {
-  console.log('请前往编辑词典', path.resolve(process.cwd(), `./dictionaries/${name}/index.js`));
+  console.log('点击前往编辑词典', path.resolve(process.cwd(), `./dictionaries/${name}/index.js`));
 };
